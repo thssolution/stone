@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Transactions" representedClassName="TransactionsModel" syncable="YES">
+        <attribute name="cvv" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Transactions" positionX="-5130" positionY="-1926" width="128" height="163"/>
+    </elements>
+</model>

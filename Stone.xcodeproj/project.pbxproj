@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		369E5E586FF36843272D3A57 /* Pods_Stone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88811D0B575D99B153F468FA /* Pods_Stone.framework */; };
+		6F4AE939B4D8FA9ECC31D403 /* Pods_StoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5573CDB9B4D06A19D3700623 /* Pods_StoneTests.framework */; };
+		92365CD81D40F27D0059AC59 /* JSONTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92365CD61D40F27D0059AC59 /* JSONTransactions.swift */; };
+		92365CD91D40F27D0059AC59 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92365CD71D40F27D0059AC59 /* Transactions.swift */; };
+		92365CDB1D40F3100059AC59 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92365CDA1D40F3100059AC59 /* Downloader.swift */; };
+		924923051D40255900F0963B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924923041D40255900F0963B /* AppDelegate.swift */; };
+		924923071D40255900F0963B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924923061D40255900F0963B /* MainViewController.swift */; };
+		924923091D40255900F0963B /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924923081D40255900F0963B /* TransactionsViewController.swift */; };
+		9249230C1D40255900F0963B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9249230A1D40255900F0963B /* Main.storyboard */; };
+		9249230E1D40255900F0963B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9249230D1D40255900F0963B /* Assets.xcassets */; };
+		924923111D40255900F0963B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9249230F1D40255900F0963B /* LaunchScreen.storyboard */; };
+		9249231C1D40255900F0963B /* StoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249231B1D40255900F0963B /* StoneTests.swift */; };
+		924923271D40255900F0963B /* StoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924923261D40255900F0963B /* StoneUITests.swift */; };
+		924923361D40292900F0963B /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924923351D40292900F0963B /* CreditCard.swift */; };
+		924923371D40292900F0963B /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924923351D40292900F0963B /* CreditCard.swift */; };
+		92B9991D1D40F5790063617B /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B9991B1D40F5790063617B /* TransactionCell.swift */; };
+		92B9991E1D40F5790063617B /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B9991C1D40F5790063617B /* TransactionCell.xib */; };
+		92B999211D40FA480063617B /* StoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92B9991F1D40FA480063617B /* StoneModel.xcdatamodeld */; };
+		92B9992A1D40FB290063617B /* Transactions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B999281D40FB290063617B /* Transactions+CoreDataProperties.swift */; };
+		92B9992B1D40FB290063617B /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B999291D40FB290063617B /* TransactionsModel.swift */; };
+		FA0FB0DD633418BED427BB98 /* Pods_StoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45B33EF627E3767643E6B93 /* Pods_StoneUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		924923181D40255900F0963B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 924922F91D40255900F0963B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924923001D40255900F0963B;
+			remoteInfo = Stone;
+		};
+		924923231D40255900F0963B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 924922F91D40255900F0963B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924923001D40255900F0963B;
+			remoteInfo = Stone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B2C38CA986F69C12AB080A /* Pods-Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stone/Pods-Stone.debug.xcconfig"; sourceTree = "<group>"; };
+		51CBFC1BDBEF25D933E5FF11 /* Pods-StoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoneUITests/Pods-StoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5573CDB9B4D06A19D3700623 /* Pods_StoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708F5BF55AEAE5F8603535A4 /* Pods-StoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoneTests/Pods-StoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		88811D0B575D99B153F468FA /* Pods_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92365CD41D402DF60059AC59 /* Stone-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stone-Bridging-Header.h"; sourceTree = "<group>"; };
+		92365CD61D40F27D0059AC59 /* JSONTransactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTransactions.swift; sourceTree = "<group>"; };
+		92365CD71D40F27D0059AC59 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		92365CDA1D40F3100059AC59 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		924923011D40255900F0963B /* Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		924923041D40255900F0963B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		924923061D40255900F0963B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		924923081D40255900F0963B /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		9249230B1D40255900F0963B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9249230D1D40255900F0963B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		924923101D40255900F0963B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		924923121D40255900F0963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924923171D40255900F0963B /* StoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9249231B1D40255900F0963B /* StoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneTests.swift; sourceTree = "<group>"; };
+		9249231D1D40255900F0963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924923221D40255900F0963B /* StoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		924923261D40255900F0963B /* StoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneUITests.swift; sourceTree = "<group>"; };
+		924923281D40255900F0963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924923351D40292900F0963B /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		92B9991B1D40F5790063617B /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		92B9991C1D40F5790063617B /* TransactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		92B999201D40FA480063617B /* StoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoneModel.xcdatamodel; sourceTree = "<group>"; };
+		92B999281D40FB290063617B /* Transactions+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transactions+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		92B999291D40FB290063617B /* TransactionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		9A22F44C7A21A97F2997D7A9 /* Pods-Stone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stone/Pods-Stone.release.xcconfig"; sourceTree = "<group>"; };
+		A226E0AE5A4BF402F7D0B561 /* Pods-StoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoneUITests/Pods-StoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C45B33EF627E3767643E6B93 /* Pods_StoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C8A2B1AA9AEB190E59ACF7 /* Pods-StoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoneTests/Pods-StoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924922FE1D40255900F0963B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369E5E586FF36843272D3A57 /* Pods_Stone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924923141D40255900F0963B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4AE939B4D8FA9ECC31D403 /* Pods_StoneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9249231F1D40255900F0963B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0FB0DD633418BED427BB98 /* Pods_StoneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5151F319A5E4990E300CB3E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88811D0B575D99B153F468FA /* Pods_Stone.framework */,
+				5573CDB9B4D06A19D3700623 /* Pods_StoneTests.framework */,
+				C45B33EF627E3767643E6B93 /* Pods_StoneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92365CD51D40F27D0059AC59 /* JSONTransactions */ = {
+			isa = PBXGroup;
+			children = (
+				92365CD61D40F27D0059AC59 /* JSONTransactions.swift */,
+				92365CD71D40F27D0059AC59 /* Transactions.swift */,
+			);
+			path = JSONTransactions;
+			sourceTree = "<group>";
+		};
+		924922F81D40255900F0963B = {
+			isa = PBXGroup;
+			children = (
+				92B999281D40FB290063617B /* Transactions+CoreDataProperties.swift */,
+				92B999291D40FB290063617B /* TransactionsModel.swift */,
+				92365CD41D402DF60059AC59 /* Stone-Bridging-Header.h */,
+				924923031D40255900F0963B /* Stone */,
+				9249231A1D40255900F0963B /* StoneTests */,
+				924923251D40255900F0963B /* StoneUITests */,
+				924923021D40255900F0963B /* Products */,
+				FD4FA61376A004E503BF0247 /* Pods */,
+				5151F319A5E4990E300CB3E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		924923021D40255900F0963B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				924923011D40255900F0963B /* Stone.app */,
+				924923171D40255900F0963B /* StoneTests.xctest */,
+				924923221D40255900F0963B /* StoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924923031D40255900F0963B /* Stone */ = {
+			isa = PBXGroup;
+			children = (
+				92365CD51D40F27D0059AC59 /* JSONTransactions */,
+				924923341D4028F600F0963B /* Utils */,
+				924923041D40255900F0963B /* AppDelegate.swift */,
+				924923061D40255900F0963B /* MainViewController.swift */,
+				924923081D40255900F0963B /* TransactionsViewController.swift */,
+				9249230A1D40255900F0963B /* Main.storyboard */,
+				9249230D1D40255900F0963B /* Assets.xcassets */,
+				9249230F1D40255900F0963B /* LaunchScreen.storyboard */,
+				924923121D40255900F0963B /* Info.plist */,
+				92B9991B1D40F5790063617B /* TransactionCell.swift */,
+				92B9991C1D40F5790063617B /* TransactionCell.xib */,
+				92B9991F1D40FA480063617B /* StoneModel.xcdatamodeld */,
+			);
+			path = Stone;
+			sourceTree = "<group>";
+		};
+		9249231A1D40255900F0963B /* StoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				9249231B1D40255900F0963B /* StoneTests.swift */,
+				9249231D1D40255900F0963B /* Info.plist */,
+			);
+			path = StoneTests;
+			sourceTree = "<group>";
+		};
+		924923251D40255900F0963B /* StoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				924923261D40255900F0963B /* StoneUITests.swift */,
+				924923281D40255900F0963B /* Info.plist */,
+			);
+			path = StoneUITests;
+			sourceTree = "<group>";
+		};
+		924923341D4028F600F0963B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				92365CDA1D40F3100059AC59 /* Downloader.swift */,
+				924923351D40292900F0963B /* CreditCard.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FD4FA61376A004E503BF0247 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09B2C38CA986F69C12AB080A /* Pods-Stone.debug.xcconfig */,
+				9A22F44C7A21A97F2997D7A9 /* Pods-Stone.release.xcconfig */,
+				D1C8A2B1AA9AEB190E59ACF7 /* Pods-StoneTests.debug.xcconfig */,
+				708F5BF55AEAE5F8603535A4 /* Pods-StoneTests.release.xcconfig */,
+				51CBFC1BDBEF25D933E5FF11 /* Pods-StoneUITests.debug.xcconfig */,
+				A226E0AE5A4BF402F7D0B561 /* Pods-StoneUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		924923001D40255900F0963B /* Stone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9249232B1D40255900F0963B /* Build configuration list for PBXNativeTarget "Stone" */;
+			buildPhases = (
+				6246DB29FE56260457545652 /* 📦 Check Pods Manifest.lock */,
+				924922FD1D40255900F0963B /* Sources */,
+				924922FE1D40255900F0963B /* Frameworks */,
+				924922FF1D40255900F0963B /* Resources */,
+				6099FC622C011020503FB829 /* 📦 Embed Pods Frameworks */,
+				E606BE6FDF0CE3BE899E2DA4 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stone;
+			productName = Stone;
+			productReference = 924923011D40255900F0963B /* Stone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		924923161D40255900F0963B /* StoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9249232E1D40255900F0963B /* Build configuration list for PBXNativeTarget "StoneTests" */;
+			buildPhases = (
+				F39AAED2B4DAD8BEA9F6C875 /* 📦 Check Pods Manifest.lock */,
+				924923131D40255900F0963B /* Sources */,
+				924923141D40255900F0963B /* Frameworks */,
+				924923151D40255900F0963B /* Resources */,
+				F4AD598E21D00973B327A126 /* 📦 Embed Pods Frameworks */,
+				31F13F1CCBD8248DF2005F24 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				924923191D40255900F0963B /* PBXTargetDependency */,
+			);
+			name = StoneTests;
+			productName = StoneTests;
+			productReference = 924923171D40255900F0963B /* StoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		924923211D40255900F0963B /* StoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924923311D40255900F0963B /* Build configuration list for PBXNativeTarget "StoneUITests" */;
+			buildPhases = (
+				913BA4D7F46645709B1F3893 /* 📦 Check Pods Manifest.lock */,
+				9249231E1D40255900F0963B /* Sources */,
+				9249231F1D40255900F0963B /* Frameworks */,
+				924923201D40255900F0963B /* Resources */,
+				4D1C4A62FC065B371B774848 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				924923241D40255900F0963B /* PBXTargetDependency */,
+			);
+			name = StoneUITests;
+			productName = StoneUITests;
+			productReference = 924923221D40255900F0963B /* StoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		924922F91D40255900F0963B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Denis Nascimento";
+				TargetAttributes = {
+					924923001D40255900F0963B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					924923161D40255900F0963B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 924923001D40255900F0963B;
+					};
+					924923211D40255900F0963B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 924923001D40255900F0963B;
+					};
+				};
+			};
+			buildConfigurationList = 924922FC1D40255900F0963B /* Build configuration list for PBXProject "Stone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 924922F81D40255900F0963B;
+			productRefGroup = 924923021D40255900F0963B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				924923001D40255900F0963B /* Stone */,
+				924923161D40255900F0963B /* StoneTests */,
+				924923211D40255900F0963B /* StoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		924922FF1D40255900F0963B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924923111D40255900F0963B /* LaunchScreen.storyboard in Resources */,
+				9249230E1D40255900F0963B /* Assets.xcassets in Resources */,
+				92B9991E1D40F5790063617B /* TransactionCell.xib in Resources */,
+				9249230C1D40255900F0963B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924923151D40255900F0963B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924923201D40255900F0963B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31F13F1CCBD8248DF2005F24 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoneTests/Pods-StoneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1C4A62FC065B371B774848 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoneUITests/Pods-StoneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6099FC622C011020503FB829 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stone/Pods-Stone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6246DB29FE56260457545652 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		913BA4D7F46645709B1F3893 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E606BE6FDF0CE3BE899E2DA4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stone/Pods-Stone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39AAED2B4DAD8BEA9F6C875 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4AD598E21D00973B327A126 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoneTests/Pods-StoneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		924922FD1D40255900F0963B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92365CD91D40F27D0059AC59 /* Transactions.swift in Sources */,
+				92365CDB1D40F3100059AC59 /* Downloader.swift in Sources */,
+				92B9992A1D40FB290063617B /* Transactions+CoreDataProperties.swift in Sources */,
+				924923361D40292900F0963B /* CreditCard.swift in Sources */,
+				92B999211D40FA480063617B /* StoneModel.xcdatamodeld in Sources */,
+				92B9992B1D40FB290063617B /* TransactionsModel.swift in Sources */,
+				924923091D40255900F0963B /* TransactionsViewController.swift in Sources */,
+				924923051D40255900F0963B /* AppDelegate.swift in Sources */,
+				92365CD81D40F27D0059AC59 /* JSONTransactions.swift in Sources */,
+				92B9991D1D40F5790063617B /* TransactionCell.swift in Sources */,
+				924923071D40255900F0963B /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924923131D40255900F0963B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924923371D40292900F0963B /* CreditCard.swift in Sources */,
+				9249231C1D40255900F0963B /* StoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9249231E1D40255900F0963B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924923271D40255900F0963B /* StoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		924923191D40255900F0963B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924923001D40255900F0963B /* Stone */;
+			targetProxy = 924923181D40255900F0963B /* PBXContainerItemProxy */;
+		};
+		924923241D40255900F0963B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924923001D40255900F0963B /* Stone */;
+			targetProxy = 924923231D40255900F0963B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9249230A1D40255900F0963B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9249230B1D40255900F0963B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9249230F1D40255900F0963B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924923101D40255900F0963B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		924923291D40255900F0963B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9249232A1D40255900F0963B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9249232C1D40255900F0963B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B2C38CA986F69C12AB080A /* Pods-Stone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thssolution.Stone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stone-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		9249232D1D40255900F0963B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A22F44C7A21A97F2997D7A9 /* Pods-Stone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thssolution.Stone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stone-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9249232F1D40255900F0963B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C8A2B1AA9AEB190E59ACF7 /* Pods-StoneTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thssolution.StoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stone.app/Stone";
+			};
+			name = Debug;
+		};
+		924923301D40255900F0963B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708F5BF55AEAE5F8603535A4 /* Pods-StoneTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thssolution.StoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stone.app/Stone";
+			};
+			name = Release;
+		};
+		924923321D40255900F0963B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CBFC1BDBEF25D933E5FF11 /* Pods-StoneUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = StoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thssolution.StoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stone;
+			};
+			name = Debug;
+		};
+		924923331D40255900F0963B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A226E0AE5A4BF402F7D0B561 /* Pods-StoneUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = StoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thssolution.StoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		924922FC1D40255900F0963B /* Build configuration list for PBXProject "Stone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924923291D40255900F0963B /* Debug */,
+				9249232A1D40255900F0963B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9249232B1D40255900F0963B /* Build configuration list for PBXNativeTarget "Stone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9249232C1D40255900F0963B /* Debug */,
+				9249232D1D40255900F0963B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9249232E1D40255900F0963B /* Build configuration list for PBXNativeTarget "StoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9249232F1D40255900F0963B /* Debug */,
+				924923301D40255900F0963B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924923311D40255900F0963B /* Build configuration list for PBXNativeTarget "StoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924923321D40255900F0963B /* Debug */,
+				924923331D40255900F0963B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92B9991F1D40FA480063617B /* StoneModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92B999201D40FA480063617B /* StoneModel.xcdatamodel */,
+			);
+			currentVersion = 92B999201D40FA480063617B /* StoneModel.xcdatamodel */;
+			path = StoneModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 924922F91D40255900F0963B /* Project object */;
+}
