@@ -34,13 +34,13 @@ class TransactionCell: UITableViewCell {
             self.labelName.text = name
         }
         if let number = transaction.number {
-            self.labelNumber.text = number
+            self.labelNumber.text = "Card: \(number)"
         }
         if let price = transaction.price {
-            self.LabelPrice.text = String(price)
+            self.LabelPrice.text = "Valor: R$ \(price)"
         }
         if let date:NSDate = transaction.date {
-            self.labelDate.text = date.longStyle
+            self.labelDate.text = "Data: \(date.longStyle)"
         }
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, UITextFieldDelegate {
+class MainViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var textCardNumber: UITextField!
@@ -19,8 +19,8 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
     @IBOutlet weak var textCardCVV: UITextField!
     @IBOutlet weak var textPrice: UITextField!
     @IBOutlet weak var boxFields: UIView!
-    @IBOutlet weak var btnScan: UIButton!
     @IBOutlet weak var imageFlag: UIImageView!
+    @IBOutlet weak var viewLoading: UIView!
     
     
     override func viewDidAppear(animated: Bool) {
@@ -36,14 +36,8 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.resetFields))
         self.view.addGestureRecognizer(tapGesture)
         
-        
         self.setBottomBorder()
         
-        if !CardIOUtilities.canReadCardWithCamera() {
-            self.btnScan.hidden = true
-        }else{
-            CardIOUtilities.preload()
-        }
     }
     
     
@@ -62,29 +56,7 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
         
     }
     
-    @IBAction func scanCard(sender: AnyObject) {
-        let cardIOVC = CardIOPaymentViewController(paymentDelegate: self)
-        cardIOVC.modalPresentationStyle = .FormSheet
-        presentViewController(cardIOVC, animated: true, completion: nil)
-    }
-    
-    func userDidCancelPaymentViewController(paymentViewController: CardIOPaymentViewController!) {
-        paymentViewController?.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func userDidProvideCreditCardInfo(cardInfo: CardIOCreditCardInfo!, inPaymentViewController paymentViewController: CardIOPaymentViewController!) {
-        
-        if let info = cardInfo {
-            self.textCardName.text = info.cardholderName
-            self.textCardNumber.text = info.cardNumber
-            self.textCardmonth.text = "\(info.expiryMonth)"
-            self.textCardYear.text = "\(info.expiryYear)"
-            self.textCardCVV.text = info.cvv
-            self.imageFlag.image = info.cardImage
-        }
-        paymentViewController?.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
+
     func textFieldDidBeginEditing(textField: UITextField) {
         addToolBar(textField)
     }
@@ -131,6 +103,19 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
         }
     }
     
+    @IBAction func goToClean(sender: AnyObject) {
+        
+        for view  in self.boxFields.subviews
+        {
+            if let textField = view as? UITextField {
+                textField.text = ""
+            }
+        }
+ 
+        
+    }
+    
+    
     @IBAction func goToSave(sender: AnyObject) {
         
         if checkFiedls() {
@@ -157,15 +142,12 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
     
     func saveTransaction() {
         
-        
-        
-        
-        
-        
         if let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate  as? AppDelegate {
             if let managedContext: NSManagedObjectContext = appDelegate.managedObjectContext{
                 if  let transaction:TransactionsModel = NSEntityDescription.insertNewObjectForEntityForName("Transactions", inManagedObjectContext:managedContext) as? TransactionsModel {
                    
+                    self.viewLoading.hidden = false
+                    
                     transaction.name = self.textCardName.text
                     transaction.number = self.textCardNumber.text
                     transaction.month = Int(self.textCardmonth.text!)
@@ -178,20 +160,25 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
                     
                     Downloader.addTransaction(transaction, completion: { (jsonAdd, isSuccess) in
                         
+                        var message = "Transação efetuada com sucesso"
+                        
                         if isSuccess {
                             print("Não foi dado nenhum tratamento ao retorno do post por que o resultado é um mock, sempre vem o mesmo resultado")
                             do {
                                 try managedContext.save()
-                                let alert = UIAlertController(title: "Stone", message: "Transação efetuada com sucesso", preferredStyle: UIAlertControllerStyle.Alert)
-                                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil));
-                                self.showViewController(alert, sender: self);
-
                                 
                             } catch let error as NSError  {
                                 print("Could not save \(error), \(error.userInfo)")
+                                message = "Ocorreu um erro ao persistir o dado local"
                             }
+                        }else{
+                            message = "Ocorreu um erro na chamada a api "
                         }
-
+                        
+                        let alert = UIAlertController(title: "Stone", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil));
+                        self.showViewController(alert, sender: self);
+                        self.viewLoading.hidden = true
                     })
                 }
                 

@@ -7,7 +7,6 @@ target 'Stone' do
 
   # Pods for Stone
   
-  pod 'CardIO'
   pod 'Alamofire', '~> 3.4'
   pod 'SwiftyJSON'
 
