@@ -179,7 +179,7 @@ class MainViewController: UIViewController,CardIOPaymentViewControllerDelegate, 
                     Downloader.addTransaction(transaction, completion: { (jsonAdd, isSuccess) in
                         
                         if isSuccess {
-                            print("Não foi dado nenhum tratamento ao retorno do post, por que o resultado é mock, sempre vem o mesmo resultado")
+                            print("Não foi dado nenhum tratamento ao retorno do post por que o resultado é um mock, sempre vem o mesmo resultado")
                             do {
                                 try managedContext.save()
                                 let alert = UIAlertController(title: "Stone", message: "Transação efetuada com sucesso", preferredStyle: UIAlertControllerStyle.Alert)
